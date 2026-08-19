@@ -65,6 +65,8 @@ const ALLOWED_ORIGINS = [
   'http://localhost:5174',  // Vite dev (alternate port)
   'http://localhost:3000',  // Next.js
   'https://humanfirewall.up.railway.app', // Railway frontend
+  'https://precious-endurance-production-819e.up.railway.app', // Railway deployed frontend
+  'https://precious-endurance-production-819e.up.railway.app', // Railway deployed frontend
 ];
 
 app.use(cors({
