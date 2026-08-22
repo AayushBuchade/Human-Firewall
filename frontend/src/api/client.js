@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'https://NEW-BACKEND-DOMAIN/api' });
+const api = axios.create({ baseURL: 'https://human-firewall-production.up.railway.app/api' });
 
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('hf_token');
