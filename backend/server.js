@@ -171,12 +171,12 @@ async function start() {
     process.exit(1);
   }
 
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`\n🛡️  Aware Guard API v3.0 (PostgreSQL)\n`);
-    console.log(`   📡 http://localhost:${PORT}/api/health`);
-    console.log(`   📧 POST http://localhost:${PORT}/api/analyze-email`);
-    console.log(`   📊 GET  http://localhost:${PORT}/api/dashboard (auth required)\n`);
-  });
+    console.log(`   📡 Server listening on port ${PORT}`);
+    console.log(`   📧 POST /api/analyze-email`);
+    console.log(`   📊 GET  /api/dashboard`);
+});
 }
 
 start();

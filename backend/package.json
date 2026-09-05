@@ -10,7 +10,11 @@
     "db:schema": "psql -U postgres -d awareguard -f db/schema.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cybersecurity", "phishing", "saas"],
+  "keywords": [
+    "cybersecurity",
+    "phishing",
+    "saas"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
